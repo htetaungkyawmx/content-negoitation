@@ -3,7 +3,6 @@ package org.jdc.contentnegoitation;
 import lombok.RequiredArgsConstructor;
 import org.jdc.contentnegoitation.dao.CustomerDao;
 import org.jdc.contentnegoitation.entity.Customer;
-import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
