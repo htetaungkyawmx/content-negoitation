@@ -14,19 +14,19 @@ import org.springframework.transaction.annotation.Transactional;
 @SpringBootApplication
 @RequiredArgsConstructor
 public class ContentNegoitationApplication {
-
     private final CustomerDao customerDao;
     @Bean @Transactional @Profile("dev")
-    public ApplicationRunner runner() {
-        return r->{
-            Customer c1= new Customer("John","Doe","john@gmail.com");
-            Customer c2= new Customer("Thomas","Sha","thomas@gmail.com");
-            Customer c3= new Customer("Peter","Ohh","peter@gmail.com");
+    public ApplicationRunner runner(){
+        return r ->{
+            Customer c1=new Customer("John","Doe","john@gmial.com");
+            Customer c2=new Customer("John","William","william@gmial.com");
+            Customer c3=new Customer("John","Updike","updike@gmial.com");
             customerDao.save(c1);
             customerDao.save(c2);
             customerDao.save(c3);
         };
     }
+
     public static void main(String[] args) {
         SpringApplication.run(ContentNegoitationApplication.class, args);
     }
